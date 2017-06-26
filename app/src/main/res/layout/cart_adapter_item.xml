@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="4dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginTop="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/cartAdapterItem_productInfoLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="14dp"
+            android:layout_marginStart="14dp">
+
+            <ImageView
+                android:id="@+id/cartAdapterItem_imageView"
+                android:layout_width="56dp"
+                android:layout_height="72dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/arrow_down" />
+
+            <TextView
+                android:id="@+id/cartAdapterItem_productCountTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="16dp"
+                android:textColor="@color/colorAccent"
+                android:textSize="16dp"
+                tools:text="3杯" />
+
+            <TextView
+                android:id="@+id/cartAdapterItem_sizeTextView"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/cartAdapterItem_productCountTextView"
+                android:background="@drawable/circle_size"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                tools:text="L" />
+
+            <LinearLayout
+                android:id="@+id/cartAdapterItem_productTextLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_8"
+                android:layout_toLeftOf="@id/cartAdapterItem_sizeTextView"
+                android:layout_toRightOf="@id/cartAdapterItem_imageView"
+                android:gravity="center_vertical"
+                android:minHeight="72dp"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/dimen_8"
+                android:paddingTop="@dimen/dimen_8">
+
+                <TextView
+                    android:id="@+id/cartAdapterItem_nameTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorAccentDark"
+                    android:textSize="16dp"
+                    tools:text="Ice Tea" />
+
+                <TextView
+                    android:id="@+id/cartAdapterItem_sweetTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/sweet"
+                    android:textSize="14dp"
+                    tools:text="Very Sweet" />
+
+                <TextView
+                    android:id="@+id/cartAdapterItem_temperatureTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    tools:text="Cold" />
+
+                <TextView
+                    android:id="@+id/cartAdapterItem_addTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/add"
+                    android:textSize="14dp"
+                    tools:text="Cold" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/cartAdapterItem_functionBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@id/cartAdapterItem_productInfoLayout"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/cartAdapterItem_clearProductImageView"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:padding="6dp"
+                android:src="@mipmap/clear"
+                android:tint="@color/gray_fa" />
+
+            <TextView
+                android:id="@+id/cartAdapterItem_priceTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:textColor="@color/colorAccent"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                tools:text="NT$90" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignTop="@id/cartAdapterItem_functionBarLayout"
+            android:background="@color/gray_de" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

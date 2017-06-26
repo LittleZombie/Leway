@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "199992425341",
+    "firebase_url": "https://leway-52fc8.firebaseio.com",
+    "project_id": "leway-52fc8",
+    "storage_bucket": "leway-52fc8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:199992425341:android:5a6c76dbc3435f97",
+        "android_client_info": {
+          "package_name": "com.leway.taipei_hejiang"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "199992425341-2pg84jem21sk11mj6doj0sjqcku3ak75.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.leway.taipei_hejiang",
+            "certificate_hash": "1aa360691e9854302d7a916d23003861a8b6475e"
+          }
+        },
+        {
+          "client_id": "199992425341-7i14o0ce1f88vlfr3pf8qn3ku7sgmg9v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGVJj3MOL-iYpZo0H4V1qiCWoCh1CWgaw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "199992425341-7i14o0ce1f88vlfr3pf8qn3ku7sgmg9v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,119 @@
+<resources>
+
+    <string name="app_name">LEWAY合江店</string>
+    <string name="order_drink">訂購飲品</string>
+    <string name="cart">購物車</string>
+    <string name="order_info">訂購人資料</string>
+    <string name="contact_us">聯絡我們</string>
+
+    <string name="cold">冷</string>
+    <string name="hot">熱</string>
+    <string name="warn">溫</string>
+    <string name="sweet_fixed">甜度固定</string>
+    <string name="cup_size_l">L</string>
+    <string name="cup_size_m">M</string>
+    <string name="cup_size_900">900c.c.</string>
+    <string name="price">NT$</string>
+
+    <string name="sweet">甜度</string>
+    <string name="sweet_normal">正常</string>
+    <string name="sweet_normal_less">少</string>
+    <string name="sweet_half">半</string>
+    <string name="sweet_less">微</string>
+    <string name="sweet_2">2分</string>
+    <string name="sweet_1">1分</string>
+    <string name="sweet_no">無</string>
+
+    <string name="temperature">溫度</string>
+    <array name="temperature_ice">
+        <item name="ice_more">多冰</item>
+        <item name="ice_normal">正常冰</item>
+        <item name="ice_less">少冰</item>
+        <item name="ice_half">半冰</item>
+        <item name="ice_little">微冰</item>
+        <item name="ice_no">去冰(仍有少許碎冰)</item>
+        <item name="ice_body">常溫(完全無冰)</item>
+    </array>
+
+    <array name="temperature_hot">
+        <item name="warn">溫</item>
+        <item name="hot">熱</item>
+    </array>
+
+    <string name="add5">+ NT$5</string>
+    <string name="add10">+ NT$10</string>
+    <string name="add15">+ NT$15</string>
+    <string name="how_many">數量</string>
+    <string name="cup">杯</string>
+    <string name="calculate">小計 NT$ </string>
+    <string name="add_to_cart">加進購物車</string>
+
+    <string name="not_selected_sweet">請選擇甜度</string>
+    <string name="not_selected_temperature">請選擇飲品溫度</string>
+    <string name="delete">刪除</string>
+    <string name="modify">修改</string>
+
+    <string name="food_size">份</string>
+    <string name="confirm">確認</string>
+    <string name="empty_cart">購物車沒有商品\n點擊去購物 :D</string>
+    <string name="calculate_total">總計 NT$ </string>
+
+    <string name="is_clear_all">確定要清空購物車嗎?</string>
+    <string name="cancel">取消</string>
+
+    <string name="send">送出訂單</string>
+    <string name="company">公司/單位/住宅</string>
+    <string name="order_name">訂購人名字</string>
+    <string name="order_phone">聯絡電話</string>
+    <string name="take_product_method">取貨方式</string>
+    <string name="take_self">自取</string>
+    <string name="take_other">外送</string>
+    <string name="take_other_message">(大台北市均可外送，金額依地區不同設定200&#8211;1000元)</string>
+    <string name="take_other_address">外送地址</string>
+
+    <string name="date">日期</string>
+    <string name="time">希望送達/自取時間</string>
+
+    <string name="write">請填寫</string>
+    <string name="please_select_method">請選擇取貨方式</string>
+
+    <string name="order_title">飲品/甜點訂單</string>
+    <string name="is_finish_this_page">確定要離開此頁嗎?</string>
+    <string name="thanks">感謝您的訂購，我們會盡速與您聯絡</string>
+    <string name="please_wait">請稍後&#8230;</string>
+
+    <string name="phone_text">電話:</string>
+    <string name="phone">(02)2501&#8211;5959</string>
+    <string name="address_text">地址:</string>
+    <string name="address">台北市中山區合江街107號</string>
+    <string name="fb">Facebook搜尋：\nLeway 樂の本味-台北合江店</string>
+    <string name="can_not_call">您的裝置無法撥打電話</string>
+
+    <!-- 加料 -->
+    <string name="add">加料</string>
+    <string name="add_grass_jelly">仙草凍</string>
+    <string name="add_sago_dew">西米露</string>
+    <string name="add_aiyu_jelly">愛玉凍</string>
+    <string name="add_white_tapioca_ball">白玉珍珠</string>
+    <string name="add_aloe_vera">蘆薈</string>
+    <string name="add_taro">芋頭</string>
+
+    <!-- 飲料 Title -->
+    <string name="leway_tea_original">樂の原味茶</string>
+    <string name="leway_tea_special">樂の手作特調</string>
+    <string name="leway_tea_fruit">樂の鮮果茶</string>
+    <string name="leway_tea_fake_milk_tea">樂の奶香茶</string>
+    <string name="leway_tea_true_milk_tea">初鹿鮮奶茶</string>
+    <string name="leway_tea_milk">初鹿牧場鮮奶</string>
+    <string name="leway_tea_high_mountain">樂の高山茶韻</string>
+    <string name="leway_tea_winner_special">冬季限定</string>
+    <string name="leway_tea_sweet_food">荒木隆夫の甜點</string>
+    <string name="leway_tea_pasture">初鹿牧場</string>
+
+    <string name="high_mountain_type">提醒：此飲品為 900c.c.瓶裝冷泡茶(無糖無冰)</string>
+
+    <string name="update">更新</string>
+    <string name="is_update">偵測到有新版本，是否更新?</string>
+    <string name="open_connection">請開啟行動網路或Wi-Fi</string>
+
+</resources>

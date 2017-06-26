@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="56dp">
+
+        <RelativeLayout
+            android:id="@+id/orderDrinkActivity_topLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryLight"
+            android:orientation="horizontal"
+            android:paddingBottom="4dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="4dp">
+
+            <ImageView
+                android:id="@+id/orderDrinkActivity_imageView"
+                android:layout_width="48dp"
+                android:layout_height="72dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/leway" />
+
+            <TextView
+                android:id="@+id/orderDrinkActivity_nameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="4dp"
+                android:layout_toRightOf="@id/orderDrinkActivity_imageView"
+                android:textColor="@color/colorAccent"
+                android:textSize="22dp"
+                tools:text="@string/leway_tea_fake_milk_tea" />
+
+            <TextView
+                android:id="@+id/orderDrinkActivity_sizeTextView"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/orderDrinkActivity_nameTextView"
+                android:background="@drawable/circle_size"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                tools:text="L" />
+
+            <TextView
+                android:id="@+id/orderDrinkActivity_priceTitleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="4dp"
+                android:layout_toLeftOf="@+id/orderDrinkActivity_priceTextView"
+                android:text="@string/price"
+                android:textColor="@color/colorAccent"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@id/orderDrinkActivity_priceTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/colorAccent"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                tools:text="60" />
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/orderDrinkActivity_topLineView"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/orderDrinkActivity_topLayout"
+            android:background="@color/colorAccent" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/orderDrinkActivity_topLineView"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/orderDrinkActivity_sweetLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="8dp">
+
+                    <TextView
+                        android:id="@+id/orderDrinkActivity_sweetTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sweet"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="18dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_below="@id/orderDrinkActivity_sweetTextView"
+                        android:animateLayoutChanges="true"
+                        android:background="@drawable/circle_sweet"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp">
+
+                        <TextView
+                            android:id="@+id/orderDrinkActivity_sweetNormalTextView"
+                            style="@style/SweetTextStyle"
+                            android:onClick="onSweetItemClick"
+                            android:text="@string/sweet_normal" />
+
+                        <View style="@style/SweetLineStyle" />
+
+                        <TextView
+                            android:id="@+id/orderDrinkActivity_sweetNormalLessTextView"
+                            style="@style/SweetTextStyle"
+                            android:onClick="onSweetItemClick"
+                            android:text="@string/sweet_normal_less" />
+
+                        <View style="@style/SweetLineStyle" />
+
+                        <TextView
+                            android:id="@+id/orderDrinkActivity_sweetHalfTextView"
+                            style="@style/SweetTextStyle"
+                            android:onClick="onSweetItemClick"
+                            android:text="@string/sweet_half" />
+
+                        <View style="@style/SweetLineStyle" />
+
+                        <TextView
+                            android:id="@+id/orderDrinkActivity_sweetLessTextView"
+                            style="@style/SweetTextStyle"
+                            android:onClick="onSweetItemClick"
+                            android:text="@string/sweet_less" />
+
+                        <View style="@style/SweetLineStyle" />
+
+                        <TextView
+                            android:id="@+id/orderDrinkActivity_sweet2TextView"
+                            style="@style/SweetTextStyle"
+                            android:onClick="onSweetItemClick"
+                            android:text="@string/sweet_2" />
+
+                        <View style="@style/SweetLineStyle" />
+
+                        <TextView
+                            android:id="@+id/orderDrinkActivity_sweet1TextView"
+                            style="@style/SweetTextStyle"
+                            android:onClick="onSweetItemClick"
+                            android:text="@string/sweet_1" />
+
+                        <View style="@style/SweetLineStyle" />
+
+                        <TextView
+                            android:id="@+id/orderDrinkActivity_sweetNoTextView"
+                            style="@style/SweetTextStyle"
+                            android:onClick="onSweetItemClick"
+                            android:text="@string/sweet_no" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/orderDrinkActivity_temperatureLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/orderDrinkActivity_sweetLayout"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/orderDrinkActivity_temperatureTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/temperature"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="18dp" />
+
+                    <com.leway.taipei_hejiang.view.ChangeLineLayout
+                        android:id="@+id/orderDrinkActivity_coldFlowLayout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/orderDrinkActivity_temperatureTextView" />
+
+                    <LinearLayout
+                        android:id="@+id/orderDrinkActivity_hotLinearLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/orderDrinkActivity_coldFlowLayout"
+                        android:layout_marginTop="@dimen/dimen_4"
+                        android:orientation="horizontal" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/orderDrinkActivity_addLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/orderDrinkActivity_temperatureLayout"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/orderDrinkActivity_addTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/add"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="18dp" />
+
+                    <LinearLayout
+                        android:id="@+id/orderDrinkActivity_add5Layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/orderDrinkActivity_addTextView"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="8dp"
+                            android:text="@string/add5"
+                            android:textColor="@color/colorAccentLight"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/orderDrinkActivity_addGrassJellyTextView"
+                            style="@style/addTextStyle"
+                            android:onClick="onAddItemClick"
+                            android:text="@string/add_grass_jelly" />
+
+                        <TextView
+                            android:id="@+id/orderDrinkActivity_addSagoDewTextView"
+                            style="@style/addTextStyle"
+                            android:onClick="onAddItemClick"
+                            android:text="@string/add_sago_dew" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/orderDrinkActivity_add10Layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/orderDrinkActivity_add5Layout"
+                        android:layout_marginTop="@dimen/dimen_4"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="8dp"
+                            android:text="@string/add10"
+                            android:textColor="@color/colorAccentLight"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/orderDrinkActivity_addAiYuTextView"
+                            style="@style/addTextStyle"
+                            android:onClick="onAddItemClick"
+                            android:text="@string/add_aiyu_jelly" />
+
+                        <TextView
+                            android:id="@+id/orderDrinkActivity_addWhiteTapiocaBallTextView"
+                            style="@style/addTextStyle"
+                            android:onClick="onAddItemClick"
+                            android:text="@string/add_white_tapioca_ball" />
+
+                        <TextView
+                            android:id="@+id/orderDrinkActivity_addAloeVeraTextView"
+                            style="@style/addTextStyle"
+                            android:onClick="onAddItemClick"
+                            android:text="@string/add_aloe_vera" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/orderDrinkActivity_add15Layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/orderDrinkActivity_add10Layout"
+                        android:layout_marginTop="@dimen/dimen_4"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="8dp"
+                            android:text="@string/add15"
+                            android:textColor="@color/colorAccentLight"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/orderDrinkActivity_addTaroTextView"
+                            style="@style/addTextStyle"
+                            android:onClick="onAddItemClick"
+                            android:text="@string/add_taro" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/orderDrinkActivity_howManyCupLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/orderDrinkActivity_addLayout"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/orderDrinkActivity_howManyTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/how_many"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="18dp" />
+
+                    <EditText
+                        android:id="@+id/orderDrinkActivity_cupEditText"
+                        android:layout_width="48dp"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/orderDrinkActivity_howManyTextView"
+                        android:digits="0123456789"
+                        android:gravity="center_horizontal"
+                        android:inputType="number"
+                        android:maxEms="3"
+                        android:text="1"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/orderDrinkActivity_cupTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/orderDrinkActivity_cupEditText"
+                        android:text="@string/cup"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="18dp" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/orderDrinkActivity_highMountainTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/orderDrinkActivity_howManyCupLayout"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dimen_8"
+                    android:text="@string/high_mountain_type"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18dp"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/orderDrinkActivity_bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_gravity="bottom">
+
+        <View
+            android:id="@+id/orderDrinkActivity_bottomLineView"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorAccentLight" />
+
+        <FrameLayout
+            android:id="@+id/orderDrinkActivity_addToCartLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/yellow_button">
+
+            <TextView
+                android:id="@+id/orderDrinkActivity_addToCartTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:onClick="onAddToCartClick"
+                android:padding="@dimen/dimen_8"
+                android:text="@string/add_to_cart"
+                android:textColor="@color/colorAccentDark"
+                android:textSize="16dp" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/orderDrinkActivity_totalPriceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:layout_toLeftOf="@id/orderDrinkActivity_addToCartLayout"
+            android:textColor="@color/colorAccentDark"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            tools:text="1000" />
+
+        <TextView
+            android:id="@+id/orderDrinkActivity_calculateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_toLeftOf="@id/orderDrinkActivity_totalPriceTextView"
+            android:text="@string/calculate"
+            android:textColor="@color/colorAccentDark"
+            android:textSize="18dp" />
+
+    </RelativeLayout>
+
+</FrameLayout>

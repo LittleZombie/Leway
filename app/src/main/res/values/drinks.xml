@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 樂の原味茶 -->
+    <string name="original_my_tea">樂味麥茶</string>
+    <string name="original_fish_black_tea">台灣魚池紅茶</string>
+    <string name="original_green_tea">台灣翡翠綠茶</string>
+    <string name="original_four_season_tea">台灣四季青茶</string>
+    <string name="original_oolong_tea">台灣黃金烏龍</string>
+    <string name="original_grass_tea">仙草甘茶</string>
+    <string name="original_sweet_tea">頂級冬瓜茶</string>
+    <string name="original_south_africa_tea">南非國寶茶</string>
+
+    <!-- 樂の手作特調 -->
+    <string name="special_melon_green_tea">冬瓜青茶</string>
+    <string name="special_melon_my_tea">冬瓜麥茶</string>
+    <string name="special_melon_lemon">冬瓜檸檬</string>
+    <string name="special_lemon_black_tea">檸檬紅茶</string>
+    <string name="special_lemon_tea">檸檬國寶茶</string>
+    <string name="special_dodo_green_tea">養樂多綠茶</string>
+    <string name="special_grass_tea">仙草凍蜜</string>
+    <string name="special_lemon_dodo_tea">檸檬養樂多</string>
+
+    <!-- 樂の鮮果茶 -->
+    <string name="fruit_smell_fresh_green_tea">百香鮮果綠茶</string>
+    <string name="fruit_orange_green_tea">柳橙綠茶</string>
+    <string name="fruit_emerald_lemon_green">翡翠檸檬綠</string>
+    <string name="fruit_smell_lemon_tea">青香檸檬茶</string>
+    <string name="fruit_lemon_aiyu_jelly">凍檸愛玉</string>
+    <string name="fruit_kumquat_tea">鮮桔茶</string>
+    <string name="fruit_kumquat_lemon_tea">金桔檸檬</string>
+    <string name="fruit_lemon_honey">檸檬蘆薈蜂蜜</string>
+    <string name="fruit_smell_dodo">百香養樂多</string>
+    <string name="fruit_qq_tea">QQ水果茶</string>
+    <string name="fruit_grapefruit_green">葡萄柚蜜綠</string>
+
+    <!-- 樂の奶香茶 -->
+    <string name="fake_milk_oolong_milk_tea">黃金烏龍奶茶</string>
+    <string name="fake_milk_black_milk_tea">奶茶</string>
+    <string name="fake_milk_green_milk_tea">奶綠</string>
+    <string name="fake_milk_grass_milk_tea">奶青</string>
+    <string name="fake_milk_smell_ovaltine">奶香阿華田</string>
+    <string name="fake_milk_white_tapioca_milk_tea">白玉珍珠奶茶</string>
+    <string name="fake_milk_taro_milk_tea">大甲芋頭奶茶</string>
+
+    <!-- 初鹿鮮奶茶 -->
+    <string name="true_milk_black_latte">紅茶拿鐵</string>
+    <string name="true_milk_oolong_latte">烏龍拿鐵</string>
+    <string name="true_milk_green_latte">綠茶拿鐵</string>
+    <string name="true_milk_grass_latte">青茶拿鐵</string>
+    <string name="true_milk_my_latte">麥茶拿鐵</string>
+    <string name="true_milk_grass_jelly_black_latte">仙草凍紅茶拿鐵</string>
+    <string name="true_milk_latte">國寶拿鐵</string>
+    <string name="true_milk_tapioca_black_latte">珍珠紅茶拿鐵</string>
+    <string name="true_milk_fresh_milk_tea">樂月鮮奶茶</string>
+
+    <!-- 初鹿牧場鮮奶 -->
+    <string name="milk_ovaltine">阿華田鮮奶</string>
+    <string name="milk_melon">冬瓜鮮奶</string>
+    <string name="milk_grass_jelly">仙草凍鮮奶</string>
+    <string name="milk_taro_ice">芋頭牛奶冰沙</string>
+    <string name="milk_taro_sagodew">芋頭牛奶西米露</string>
+    <string name="milk_taro">大甲芋頭鮮奶</string>
+    <string name="milk_taro_tapioca">鮮奶芋珍珠</string>
+
+    <!-- 樂の高山茶韻 -->
+    <string name="mountain_tea_ai_li">阿里山初露</string>
+    <string name="mountain_tea_high">高山玉露</string>
+
+    <!-- 冬季限定 -->
+    <string name="winter_big_ocean_tea">爽聲澎大海茶</string>
+    <string name="winter_black_sugar_tea">手煞黑糖薑茶</string>
+    <string name="winter_ginger_milk_tea">薑汁奶茶</string>
+    <string name="winter_longan_tea">桂圓紅棗茶</string>
+
+    <!-- 荒木隆夫の甜點 -->
+    <string name="sweet_food_cheese_cake">起司蛋糕</string>
+    <string name="sweet_food_ice_cream_puffs">冰淇淋泡芙</string>
+    <string name="sweet_food_lemon_cake">檸檬蛋糕</string>
+
+    <!-- 初鹿牧場 -->
+    <string name="pasture_milk">初鹿鮮奶</string>
+    <string name="pasture_ice_cream">初鹿冰淇淋</string>
+
+</resources>

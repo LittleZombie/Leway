@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/orderInfoActivity_toolBar"
+        layout="@layout/toolbar" />
+
+    <FrameLayout
+        android:id="@+id/orderInfoActivity_sendLayout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorAccent">
+
+        <TextView
+            android:id="@+id/orderInfoActivity_sendTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            android:onClick="onSendClick"
+            android:text="@string/send"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+    </FrameLayout>
+
+    <ScrollView
+        android:id="@+id/orderInfoActivity_scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/orderInfoActivity_sendLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/orderInfoActivity_toolBar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="@dimen/dimen_8">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/orderInfoActivity_companyEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/company"
+                    android:textSize="16dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/orderInfoActivity_nameEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/order_name"
+                    android:textSize="16dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/orderInfoActivity_phoneEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/order_phone"
+                    android:inputType="phone"
+                    android:textSize="16dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <RadioGroup
+                android:id="@+id/orderInfoActivity_radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/take_product_method"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16dp" />
+
+                <RadioButton
+                    android:id="@+id/orderInfoActivity_takeSelfRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/take_self"
+                    android:textSize="16dp" />
+
+                <RadioButton
+                    android:id="@+id/orderInfoActivity_takeOtherRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/take_other"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/orderInfoActivity_addressEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="28dp"
+                    android:hint="@string/take_other_address"
+                    android:inputType="text"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="28dp"
+                    android:text="@string/take_other_message"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="12dp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:text="@string/date"
+                android:textColor="@color/colorAccent"
+                android:textSize="16dp" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gray_d2">
+
+                <TextView
+                    android:id="@+id/orderInfoActivity_dateTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:drawableRight="@mipmap/arrow_down"
+                    android:gravity="center_vertical"
+                    android:onClick="onDateClick"
+                    android:paddingLeft="@dimen/dimen_8"
+                    android:textColor="@color/colorAccentLight"
+                    android:textSize="16dp"
+                    tools:text="2017/5/22" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:text="@string/time"
+                android:textColor="@color/colorAccent"
+                android:textSize="16dp" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gray_d2">
+
+                <TextView
+                    android:id="@+id/orderInfoActivity_timeTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:drawableRight="@mipmap/arrow_down"
+                    android:gravity="center_vertical"
+                    android:onClick="onTimeClick"
+                    android:paddingLeft="@dimen/dimen_8"
+                    android:textColor="@color/colorAccentLight"
+                    android:textSize="16dp"
+                    tools:text="16:00" />
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
