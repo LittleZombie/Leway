@@ -28,6 +28,7 @@ import com.leway.taipei_hejiang.model.CustomerOrderInfo;
 import com.leway.taipei_hejiang.utils.ConnectionUtil;
 import com.leway.taipei_hejiang.utils.MailStringUtils;
 import com.leway.taipei_hejiang.utils.SaveManager;
+import com.leway.taipei_hejiang.utils.SaveUtils;
 import com.leway.taipei_hejiang.utils.ShowUtils;
 
 import java.util.ArrayList;
@@ -59,6 +60,29 @@ public class OrderInfoActivity extends AppCompatActivity implements SendMailTask
         super.onCreate(savedInstanceState);
         setContentView(R.layout.order_info_activity);
         initToolbar();
+        initDataLayout();
+    }
+
+    private void initDataLayout() {
+        EditText companyEditText = (EditText) findViewById(R.id.orderInfoActivity_companyEditText);
+        companyEditText.setText(SaveUtils.getCompanyName());
+
+        EditText nameEditText = (EditText) findViewById(R.id.orderInfoActivity_nameEditText);
+        nameEditText.setText(SaveUtils.getName());
+
+        EditText phoneEditText = (EditText) findViewById(R.id.orderInfoActivity_phoneEditText);
+        phoneEditText.setText(SaveUtils.getPhone());
+
+        RadioButton selfRadioButton = (RadioButton) findViewById(R.id.orderInfoActivity_takeSelfRadioButton);
+        RadioButton otherRadioButton = (RadioButton) findViewById(R.id.orderInfoActivity_takeOtherRadioButton);
+        if(SaveUtils.isSelfTake()){
+            selfRadioButton.setChecked(true);
+        }else{
+            otherRadioButton.setChecked(true);
+        }
+
+        EditText addressEditText = (EditText) findViewById(R.id.orderInfoActivity_addressEditText);
+        addressEditText.setText(SaveUtils.getAddress());
     }
 
     private void initToolbar() {
@@ -160,9 +184,18 @@ public class OrderInfoActivity extends AppCompatActivity implements SendMailTask
             return;
         }
 
+        saveInfo();
         CustomerOrderInfo info = generateCustomerOrderInfo();
         Log.e("", "CustomerOrderInfo = " + new Gson().toJson(info));
         requestSendMailTask(info);
+    }
+
+    private void saveInfo() {
+        SaveUtils.saveCompanyName(getCompany());
+        SaveUtils.saveName(getName());
+        SaveUtils.savePhone(getPhone());
+        SaveUtils.saveFunction(!isTakeOtherSelected());
+        SaveUtils.saveAddress(getAddress());
     }
 
     private void showLoading() {
