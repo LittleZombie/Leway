@@ -15,6 +15,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import com.leway.taipei_hejiang.factory.MenuFactory;
 import com.leway.taipei_hejiang.model.Drink;
@@ -72,7 +73,13 @@ public class DrinkListFragment extends Fragment implements DrinkListAdapter.OnIt
         if (productEnum == null || getView() == null) {
             return;
         }
+        layoutOnlyForWinnerTextView(getView());
         layoutListView(getView());
+    }
+
+    private void layoutOnlyForWinnerTextView(View view) {
+        TextView textView = (TextView) view.findViewById(R.id.drinkListFragment_onlyForWinnerTextView);
+        textView.setVisibility(productEnum == ProductEnum.WINNER ? View.VISIBLE : View.GONE);
     }
 
     private void layoutListView(View view) {

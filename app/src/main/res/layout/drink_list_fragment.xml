@@ -1,16 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/drinkListFragment_onlyForWinnerTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingBottom="@dimen/dimen_4"
+        android:paddingTop="@dimen/dimen_8"
+        android:text="@string/only_11_to_3"
+        android:textColor="@color/red"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="gone"/>
 
     <ListView
         android:id="@+id/drinkListFragment_listView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_below="@id/drinkListFragment_onlyForWinnerTextView"
         android:clipToPadding="false"
-        android:padding="8dp"
         android:divider="@null"
         android:dividerHeight="8dp"
+        android:padding="8dp"
         android:scrollbars="none" />
 
-</FrameLayout>
+</RelativeLayout>
