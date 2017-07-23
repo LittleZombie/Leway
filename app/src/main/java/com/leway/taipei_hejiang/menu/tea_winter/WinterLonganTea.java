@@ -12,7 +12,7 @@ import com.leway.taipei_hejiang.model.Drink;
 public class WinterLonganTea extends Drink {
 
     public WinterLonganTea(Context context) {
-        setPrice(60);
+        setPrice(55);
         setCount(1);
         setName(context.getString(R.string.winter_longan_tea));
         setCupSize(context.getString(R.string.cup_size_m));

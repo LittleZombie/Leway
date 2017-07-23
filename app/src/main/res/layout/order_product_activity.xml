@@ -274,23 +274,41 @@
                             android:textColor="@color/colorAccentLight"
                             android:textSize="16dp" />
 
-                        <TextView
-                            android:id="@+id/orderDrinkActivity_addAiYuTextView"
-                            style="@style/addTextStyle"
-                            android:onClick="onAddItemClick"
-                            android:text="@string/add_aiyu_jelly" />
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
 
-                        <TextView
-                            android:id="@+id/orderDrinkActivity_addWhiteTapiocaBallTextView"
-                            style="@style/addTextStyle"
-                            android:onClick="onAddItemClick"
-                            android:text="@string/add_white_tapioca_ball" />
+                            <TextView
+                                android:id="@+id/orderDrinkActivity_addAiYuTextView"
+                                style="@style/addTextStyle"
+                                android:onClick="onAddItemClick"
+                                android:text="@string/add_aiyu_jelly" />
 
-                        <TextView
-                            android:id="@+id/orderDrinkActivity_addAloeVeraTextView"
-                            style="@style/addTextStyle"
-                            android:onClick="onAddItemClick"
-                            android:text="@string/add_aloe_vera" />
+                            <TextView
+                                android:id="@+id/orderDrinkActivity_addWhiteTapiocaBallTextView"
+                                style="@style/addTextStyle"
+                                android:layout_toRightOf="@id/orderDrinkActivity_addAiYuTextView"
+                                android:onClick="onAddItemClick"
+                                android:text="@string/add_white_tapioca_ball" />
+
+                            <TextView
+                                android:id="@+id/orderDrinkActivity_addAloeVeraTextView"
+                                style="@style/addTextStyle"
+                                android:layout_below="@id/orderDrinkActivity_addAiYuTextView"
+                                android:layout_marginTop="@dimen/dimen_4"
+                                android:onClick="onAddItemClick"
+                                android:text="@string/add_aloe_vera" />
+
+                            <TextView
+                                android:id="@+id/orderDrinkActivity_addChiaSeedsTextView"
+                                style="@style/addTextStyle"
+                                android:layout_toRightOf="@id/orderDrinkActivity_addAloeVeraTextView"
+                                android:layout_below="@id/orderDrinkActivity_addAiYuTextView"
+                                android:layout_marginTop="@dimen/dimen_4"
+                                android:onClick="onAddItemClick"
+                                android:text="@string/add_chia_seeds" />
+
+                        </RelativeLayout>
 
                     </LinearLayout>
 

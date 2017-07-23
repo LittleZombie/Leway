@@ -1,0 +1,20 @@
+package com.leway.taipei_hejiang.drink_add;
+
+import android.content.Context;
+
+import com.leway.taipei_hejiang.R;
+import com.leway.taipei_hejiang.model.Product;
+
+/**
+ * Created by Li Chia-en on 2017/7/23.
+ */
+
+public class ChiaSeeds extends Product {
+
+    public ChiaSeeds(Context context) {
+        setDrink(false);
+        setName(context.getString(R.string.add_chia_seeds));
+        setCount(1);
+        setPrice(10);
+    }
+}

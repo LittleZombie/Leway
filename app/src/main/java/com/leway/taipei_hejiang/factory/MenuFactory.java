@@ -7,6 +7,8 @@ import com.leway.taipei_hejiang.menu.pasture.PastureMilk;
 import com.leway.taipei_hejiang.menu.sweet_food.SweetFoodCheeseCake;
 import com.leway.taipei_hejiang.menu.sweet_food.SweetFoodIceCreamPuffs;
 import com.leway.taipei_hejiang.menu.sweet_food.SweetFoodLemonCake;
+import com.leway.taipei_hejiang.menu.tea_fruit.FruitKumquatChiaTea;
+import com.leway.taipei_hejiang.menu.tea_fruit.FruitLemonAiYuChiaSeedsTea;
 import com.leway.taipei_hejiang.menu.tea_milk.MilkGrassJelly;
 import com.leway.taipei_hejiang.menu.tea_milk.MilkMelon;
 import com.leway.taipei_hejiang.menu.tea_milk.MilkOvaltine;
@@ -114,6 +116,8 @@ public class MenuFactory {
         drinks.add(new FruitSmellDoDo(context));
         drinks.add(new FruitQQTea(context));
         drinks.add(new FruitGrapeFruitGreen(context));
+        drinks.add(new FruitLemonAiYuChiaSeedsTea(context));
+        drinks.add(new FruitKumquatChiaTea(context));
         return drinks;
     }
 

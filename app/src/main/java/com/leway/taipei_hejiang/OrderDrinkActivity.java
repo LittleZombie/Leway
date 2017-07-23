@@ -21,6 +21,7 @@ import android.widget.TextView;
 
 import com.leway.taipei_hejiang.drink_add.AiYuJelly;
 import com.leway.taipei_hejiang.drink_add.AloeVera;
+import com.leway.taipei_hejiang.drink_add.ChiaSeeds;
 import com.leway.taipei_hejiang.drink_add.GrassJelly;
 import com.leway.taipei_hejiang.drink_add.SagoDew;
 import com.leway.taipei_hejiang.drink_add.Taro;
@@ -269,6 +270,7 @@ public class OrderDrinkActivity extends AppCompatActivity implements TextWatcher
         setupSelectedAddItem(R.id.orderDrinkActivity_addWhiteTapiocaBallTextView);
         setupSelectedAddItem(R.id.orderDrinkActivity_addAloeVeraTextView);
         setupSelectedAddItem(R.id.orderDrinkActivity_addTaroTextView);
+        setupSelectedAddItem(R.id.orderDrinkActivity_addChiaSeedsTextView);
         layoutTotalPrice();
     }
 
@@ -293,6 +295,9 @@ public class OrderDrinkActivity extends AppCompatActivity implements TextWatcher
                 break;
             case R.id.orderDrinkActivity_addTaroTextView:
                 product = new Taro(this);
+                break;
+            case R.id.orderDrinkActivity_addChiaSeedsTextView:
+                product = new ChiaSeeds(this);
                 break;
         }
 
